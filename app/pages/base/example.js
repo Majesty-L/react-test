@@ -19,7 +19,11 @@ export default class app extends Component {
     this.state = {}
   }
 
-  componentDidMount() { }
+  componentWillMount() { } // 在渲染前调用
+  componentDidMount() { } // 在第一次渲染后调用，只作用于客户端
+  componentWillUpdate() { } // 在组件接收到新的props参数或者state状态、但还没有渲染时会调用，初始化不调用
+  componentDidUpdate() { } // 在组件完成更新后立即调用，初始化不调用
+  componentWillUnmount() { } // 在组件被移除之前调用
 
   // #region vscode 1.17的收缩代码块功能  业务代码
 
