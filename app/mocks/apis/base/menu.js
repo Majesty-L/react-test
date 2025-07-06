@@ -4,6 +4,12 @@ module.exports = {
     list: [
 
       {
+        id: 111,
+        resName: '练习',
+        resKey: 'feature',
+        resIcon: 'pgmb',
+      },
+      {
         id: 10063,
         resName: '概览',
         resKey: 'desk$/index',
